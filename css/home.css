@@ -91,6 +91,9 @@ button:hover {
   font-size: 45px;
   font-weight: bold;
 }
+.into-text{
+  color: #002c3e;
+}
 
 /* @keyframes textAnimation {
     0% {
@@ -450,12 +453,13 @@ button:hover {
 
 .our-project {
   color: #002c3e;
-  padding: 5%;
+  padding: 4%;
   font-family: Poppins;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
   font-family: Poppins;
+  
 }
 .our-project1 {
    
@@ -465,6 +469,30 @@ button:hover {
   font-weight: bold;
   /* text-align: center; */
   font-family: Poppins;
+}
+.animation-container{
+  display: flex;
+  align-items: center;
+}
+.animated-text {
+  animation: slide-in 1s ease-in-out forwards;
+}
+.animated-picture {
+  animation: slide-in 1s ease-in-out forwards;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.container:hover .animated-picture {
+  opacity: 1;
 }
 .Templates1::after {
   content: "";
@@ -477,6 +505,11 @@ button:hover {
 }
 .Templates1 {
   color: #f7444e;
+}
+.center-text{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .Templates {
@@ -504,7 +537,7 @@ button:hover {
 
 .para3 {
   text-align: center;
-  margin-top: -40px;
+  margin-top: -10px;
   font-family: Poppins;
 }
 
@@ -550,6 +583,14 @@ input {
  /*
 * user card
 */
+article{
+  transition: transform 0.3s ease;
+}
+article:hover{
+  box-shadow: 0 0 20px rgba(77, 77, 77, 0.1);
+  transform: scale(1.1);
+
+}
 
 .cssui-usercard{
   box-sizing: border-box;
@@ -921,25 +962,30 @@ a{
  
 
 /* media queries */
-@media(max-width:320px) {
-  /* .bgcolor button {
-    left: 7rem !important;
-  } */
+@media   (min-width: 300px)   {
+  .bgcolor button {
+    left: 16rem !important;
+  }
 
-  .bgcolor h1 {
+  /* .bgcolor h1 {
     font-size: 25px;
     margin-bottom: 3rem;
-  }
+  } */
+
+}
+@media (min-width: 396){
+  .bgcolor button {
+    left: 18rem !important;
+}
+
 
 }
 
-@media(min-width:375px) {
+@media(min-width:375) {
   .bgcolor button {
-    left: 9rem !important;
+    left: 7rem !important;
   }
 
-  .mypic p {
-    padding: 0% 5rem 0 2rem;
-  }
+  
 
 }
