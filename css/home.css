@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+/* body{
+  font-family: Poppins;
+} */
 
 /* navbar */
 .nav-item .nav-link menu{
@@ -76,11 +79,11 @@ button:hover{
  .text{
     color: hsl(357, 92%, 62%);
     padding: 10%;
-    font-family:serif;
+    font-family:Poppins;
     font-size: 45px;
     font-weight: bold;
 }
-@keyframes textAnimation {
+/* @keyframes textAnimation {
     0% {
       opacity: 0;
       transform: translateX(50px);
@@ -93,12 +96,13 @@ button:hover{
   
   .text {
     animation: textAnimation 2s ease-in-out infinite alternate;
-  } 
+  }  */
+  
 .para{
    
     padding: 10% 1%;
     font-size: 15px;
-    font-family: serif;
+    font-family: Poppins;
 }
 /* who I am  */
 .bgimage{
@@ -106,7 +110,7 @@ button:hover{
 }
 .whoiam{
     text-align: center;
-    font-family: serif;
+    font-family: Poppins;
     font-size: 60px;
     font-weight: bold;
  
@@ -132,6 +136,7 @@ button:hover{
   
   .heading {
     animation: headingAnimation 1s ease-in-out;
+    font-family: Poppins;
   }
   /* card */
   @keyframes cardAnimation {
@@ -151,9 +156,18 @@ button:hover{
     margin-bottom: 3rem;
     background-color: #f5f5f5;
     border-radius: 5px;
+    font-family: Poppins;
     animation: cardAnimation 1s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    animation: cardAnimation 1s ease-in-out infinite alternate;
+  }
+  @keyframes cardAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
   }
   
   .card-title {
@@ -176,12 +190,14 @@ button:hover{
 .card-title{
     text-align: center;
     font-weight: bold;
+    font-family: Poppins;
 }
 .fa-code{
     margin-left: 43%;
 }
 .card-text{
     text-align: center;
+    font-family: Poppins;
 }
 .fa-laptop{
     margin-left: 43%;
@@ -197,18 +213,20 @@ button:hover{
 .project-text{
     color: #002c3e;
     padding: 10% 5%;
-    font-family:serif;
+    font-family:Poppins;
     font-size: 45px;
     font-weight: bold;  
+    font-family: Poppins;
 }
 
 .our-project{
     color: #002c3e;
     padding: 10%;
-    font-family: serif;
+    font-family: Poppins;
     font-size: 45px;
     font-weight: bold;
     text-align: center;
+    font-family: Poppins;
 }
 .Templates{
     color: #f7444e;
@@ -224,7 +242,7 @@ button:hover{
 
 .Subscribe{
     text-align: center;
-    font-family: serif;
+    font-family: Poppins;
     font-size: 40px;
     font-weight: bold;
 }
@@ -237,6 +255,7 @@ button:hover{
   justify-content: center;
   text-align: center;
   margin: 50px;
+  font-family: Poppins;
 }
 
 .icon {
@@ -265,6 +284,7 @@ p {
 .para3{
     text-align: center;
     margin-top: -40px;
+    font-family: Poppins;
 }
 input{
     width: 60%;
@@ -275,6 +295,7 @@ input{
     padding: 5px 25px;
     background-color: #ffffff;
     text-align: left;
+    font-family: Poppins;
 }
 .bgfooter{
     background-color:rgb(216, 209, 199) ;
@@ -284,6 +305,7 @@ input{
     margin-bottom: 1.2rem;
     line-height: 25px;
     font-size: 15px;
+    font-family: Poppins;
 }
 .my-portfolio{
     text-align: center;
@@ -304,6 +326,7 @@ input{
 .mypic{
   text-align: center;
 }
+
 .client{
     border-radius: 999px;
     width: 100px;
@@ -330,6 +353,7 @@ input{
     font-size: 16px;
     padding: 16px 32px;
     cursor: pointer;
+    font-family: Poppins;
   }
   /* media queries */
   @media(max-width:320px){
@@ -342,9 +366,12 @@ input{
     }
 
   }
-  @media(min-width:768px){
-    .card{
-      display: flex;
+  @media(min-width:375px){
+    .bgcolor button{
+      left: 9rem !important;
+    }
+    .mypic p{
+     padding: 0% 5rem 0 2rem;
     }
 
   }
