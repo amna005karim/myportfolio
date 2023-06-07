@@ -170,6 +170,9 @@ button:hover{
     }
   }
   
+  .card .img-thumbnail:hover{
+    opacity: 0.9 !important;
+  }
   .card-title {
     margin-top: 0;
   }
